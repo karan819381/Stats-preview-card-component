@@ -1,0 +1,150 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+           /* colors */
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white-main-heading: hsl(0, 0%, 100%);
+  --transparent-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --transparent-white-headings: hsla(0, 0%, 100%, 0.6);
+          /* font */
+
+  --inter-font: 'Inter', sans-serif;
+  --lexend-font: 'Lexend Deca', sans-serif;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  background-color:  var(--main-background);
+  color: var(--white-main-heading);
+  font-family: var(--inter-font);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main {
+  width: 55rem;
+  background-color: var(--card-background);
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.card1 {
+  width: 50%;
+  padding: 3rem;
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+.heading .insights {
+  color: var(--soft-violet);
+}
+
+.para {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  font-size: .8rem;
+  padding-right: 3rem ;
+  color: var(--transparent-white-headings);
+  line-height: 1.5rem;
+}
+
+.exp {
+  gap: 3rem;
+  display: flex;
+}
+
+.detail {
+  font-size: .9rem;
+  color: var(--transparent-white-headings);
+  text-transform: uppercase;
+}
+
+.number {
+  color: var(--white-main-heading);
+  font-size: 1.3rem;
+  
+}
+
+.card2 {
+  background-color: var(--soft-violet);
+  width: 50%;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--soft-violet);
+}
+
+
+@media (max-width: 640px) {
+  .main {
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .card2 {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .para {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  .exp {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .detail .number {
+    font-size: 2rem;
+  }
+
+  .detail {
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
