@@ -36,7 +36,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [https://github.com/karan819381/Stats-preview-card-component.git]
-- Live Site URL: [https://karan819381.github.io/Stats-preview-card-component.git]
+- Live Site URL: [https://karan819381.github.io/Stats-preview-card-component]
 
 ## My process
 
